@@ -57,6 +57,7 @@ a {
 a:hover {
     text-decoration: underline;
     text-underline-offset: 10px;
+    text-decoration-thickness: 2px;
 }
 
 nav {
@@ -91,8 +92,136 @@ section {
     width: 600px;
 }
 
-.btn {
+.btnSingup {
     border: solid #253a62 1px;
     padding: 10px;
     border-radius: 20px;
+}
+
+.btnSingup:hover{
+    background-color: #253a62;
+    color: white;
+    text-decoration: none;
+    border: solid rgb(23, 220, 131) 2px;
+}
+
+.imgServices{
+    width: 18rem;
+}
+
+#services{
+    margin-left: 24%;
+    text-align: center;
+}
+
+#firstDiv_services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+.subServices{
+    text-align: justify;
+}
+
+
+
+
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.feel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactImg{
+    width: 42rem;
+    margin-left: 600px;
+    margin-right: 40px;
+    padding: 32px;
+}
+
+
+.form1{
+    width: 18rem;
+    height: 40rem;
+    padding: 32px;
+    border: solid rgb(36, 36, 36) 1px;
+    border-radius: 16px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    padding: 8px;
+    width: 16rem;
+    border: solid rgb(158, 158, 158) 1px;
+    border-radius: 14px;
+}
+
+.input:focus{
+    outline: none;
+    border: solid #253a62 1px;
+    border-radius: 0px;
+}
+
+#message{
+    height: 200px;
+    width: 252px;
+    color: rgb(158, 158, 158);
+    margin-top: 8px;
+    padding: 8px;
+}
+
+#message:focus{
+    outline: none;
+    border: solid #253a62 1px;
+    color: black;
+}
+
+.label{
+    font-weight: 600;
+    color: #253a62;
+}
+
+#submitBtn{
+    margin-top: 16px;
+    width: 274px;
+    height: 32px;
+    color: white;
+    background-color: #3d9cdf;
+    border: none;
+    border-radius: 8px;
+}
+
+#submitBtn:focus{
+    background-color: #253a62;
+}
+
+
+@media (orientation: portrait) {
+    
+    #firstDiv_services{
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    p{
+        width: 40%;
+    }
 }
